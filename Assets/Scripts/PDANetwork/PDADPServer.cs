@@ -4,7 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
  
-public class CustomUDPServer : MonoBehaviour
+public class PDADPServer : MonoBehaviour
 {
 	private const float newMessageTime = 1;
 	private float nextMessageTime = 0;

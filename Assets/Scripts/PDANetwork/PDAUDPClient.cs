@@ -4,7 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
-public class CustomUDPClient : MonoBehaviour
+public class PDAUDPClient : MonoBehaviour
 {
 	private UdpClient client;
 	private IPEndPoint localEp;

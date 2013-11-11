@@ -3,10 +3,19 @@ using System.Collections;
 
 public class Game : MonoBehaviour
 {
-	public Map m_map;
-	
 	void Start ()
 	{
-		CustomNetwork.instance.initServer();
+		PDANetwork.instance.startSession();
+		
+		//Get network view
+		//customNetworkView = GetComponent<CustomNetworkView>();
+		
+		//Add listeners
+		PDANetwork.instance.OnPDAConnected += OnPDAConnected;
+	}
+	
+	private void OnPDAConnected()
+	{
+		//PDANetwork.instance.initPDA();
 	}
 }
